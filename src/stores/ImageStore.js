@@ -3,7 +3,7 @@ import { EventEmitter } from 'events';
 
 
 
-class AStore extends EventEmitter {
+class ImageStore extends EventEmitter {
   constructor() {
     super();
 
@@ -12,7 +12,7 @@ class AStore extends EventEmitter {
         case :
 
           break;
-          
+
       }
     })
   }
@@ -28,4 +28,4 @@ class AStore extends EventEmitter {
 
 }
 
-export default new AStore();
+export default new ImageStore();

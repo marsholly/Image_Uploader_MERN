@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
-// import ImageStore from '../stores/ImageStore';
-// import ImageList from './ImageList';
-// import ImageAction from '../actions/ImageAction';
-
+import moment from 'moment';
 
 export default class ImageList extends Component {
-  // constructor(){
-  //   super();
-  //   this.submitFile = this.submitFile.bind(this);
-  // }
-  //
-  // submitFile(file){
-  //   // ImageAction.createImage(file);
-  // }
-
   render() {
-    return (
-      <div className="container">
-        <h1 className="text-center">Image</h1>
-      </div>
+    let { _id, name, url, createAt }  = this.props;
+    return(
+        <div className="col-sm-6 col-md-4">
+          <div className="thumbnail">
+            <img src={url}/>
+            <div className="caption">
+              <h3>{name}</h3>
+              <p>create at: {moment({createAt}).format('lll')}</p>
+            </div>
+          </div>
+        </div>
     )
   }
-};
+}

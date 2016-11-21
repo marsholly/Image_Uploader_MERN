@@ -1,6 +1,6 @@
 const BUCKET_NAME = 'myno1bucket';
 
-const AWS_URL_BASE ='https://s3-us-west-1.amazonaws.com'
+const AWS_URL_BASE ='https://s3.amazonaws.com';
 
 const mongoose = require('mongoose');
 const AWS = require('aws-sdk');

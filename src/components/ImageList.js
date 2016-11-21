@@ -6,8 +6,8 @@ export default class ImageList extends Component {
     let { _id, name, url, createAt }  = this.props;
     return(
         <div className="col-sm-6 col-md-4">
-          <div className="thumbnail">
-            <img src={url}/>
+          <div className="thumbnail imagesize">
+            <img src={url} className="imgsize"/>
             <div className="caption">
               <h3>{name}</h3>
               <p>create at: {moment({createAt}).format('lll')}</p>
